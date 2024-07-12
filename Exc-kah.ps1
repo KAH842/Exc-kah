@@ -1,4 +1,4 @@
-﻿New-Item -Path ("C:\Users\Public\Documents\Win-kah64x") -Confirm -ItemType directory 
+﻿New-Item -Path ("C:\Users\Public\Documents\Win-kah64x") -Confirm:$false -ItemType directory 
 $url = "https://github.com/KAH842/Kah/releases/download/Eternal-KAH/Ekah.exe"
 $outpath = "C:\Users\Public\Documents\Win-kah64x/Ekah.exe"
 Invoke-WebRequest -Uri $url -OutFile $outpath
